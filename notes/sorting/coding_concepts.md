@@ -106,7 +106,7 @@ def bubble_sort(arr):
 
 # Time complexity: O(N^2) in worst and average case scenarios.
 ```
-![bubble sort]("../../../../statics/bubble.png")
+![bubble sort]("../../statics/bubble.png")
  
 1. **Selection Sort** :
 
@@ -122,8 +122,8 @@ def selection_sort(arr):
 
 # Time complexity: O(N^2) in all cases.
 ```
-![bubble sort]("../../../../statics/selection.png")
-![bubble sort]("../../../../statics/selection_sorting.png")
+![bubble sort]("../../statics/selection.png")
+![bubble sort]("../../statics/selection_sorting.png")
  
 1. **Insertion Sort** :
 
@@ -171,7 +171,7 @@ def merge_sort(arr):
 
 # Time complexity: O(N log N) in all cases.
 ```
-![bubble sort]("../../../../statics/mergesort.png")
+![bubble sort]("../../statics/mergesort.png")
  
 1. **Quick Sort** :
 
