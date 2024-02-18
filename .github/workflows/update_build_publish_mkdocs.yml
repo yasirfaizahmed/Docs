@@ -13,7 +13,7 @@ jobs:
       matrix:
         python-version: ["3.10"]
     env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
     steps:
       - uses: actions/checkout@v2
@@ -22,4 +22,7 @@ jobs:
       - name: Update the yaml file
         run: python ${{ github.workspace }}/update_mkdocs.py
       - name: Build and Publish
-        run: ${{ github.workspace }}/publish.sh
+        run: |
+          git config --global user.email ${{vars.USER_MAIL}}
+          git config --global user.name ${{vars.USER_NAME}}
+          ${{ github.workspace }}/publish.sh
