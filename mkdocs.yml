@@ -1,9 +1,8 @@
-site_name: My Docs
-site_url : https://my-domain.com
 nav:
-  - Home: index.md
-  - Notes:
-    - sorting: notes/sorting/coding_concepts.md
-
+- Home: index.md
+- notes:
+    coding-concepts: notes/1coding_concepts.md
+    sorting: notes/2sorting.md
+site_name: My Docs
+site_url: https://my-domain.com
 theme: readthedocs
-
